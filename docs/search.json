@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "chapter1.html#limits-of-regression-model",
+    "href": "chapter1.html#limits-of-regression-model",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.1 Limits of regression model",
+    "text": "1.1 Limits of regression model\nRegression models are popular for testing linear relationship between continous predictors and continous outcome.\nHowever, in this framework :\n\nPredictors are measured without errors.\nFor example, some systems of regression equations cannot be tested:"
+  },
+  {
+    "objectID": "chapter1.html#assumptions",
+    "href": "chapter1.html#assumptions",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.2 Assumptions",
+    "text": "1.2 Assumptions\nWe assume that the errors \\(\\zeta_\\bullet\\) are not correlated.\nMoreover, by definition of exogenous variables,\nthe errors \\(\\zeta_\\bullet\\) and the exogenous variables \\(x_\\bullet\\) of the model are not correlated.\nFor simplification, we assume that endogenous and exogenous variables are standardized, that is\n\\[\\mathbb{E}(x_\\bullet)=\\mathbb{E}(y_\\bullet)=0, \\quad \\mathbb{V}(x_\\bullet)=\\mathbb{V}(y_\\bullet)=1.\\]\n\n1.2.1 Remark :\nThis assumption is not necessary in the applications; it only serves to simplify the mathematical expression of the covariance matrix."
+  },
+  {
+    "objectID": "chapter1.html#diagram-of-a-path",
+    "href": "chapter1.html#diagram-of-a-path",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.3 Diagram of a path",
+    "text": "1.3 Diagram of a path\n\n\n\n\n\n\n\n\nA path model can be summarized by a diagram. In the left, the diagram describes a mediation model with an exogenous variable \\(x_1\\), a mediator \\(y_1\\) and an outcome \\(y_2\\).\n\n\nThis diagram represents the following system\n\\[\n\\begin{cases}\ny_1=\\gamma_1 x_1 +\\zeta_1 \\\\\ny_2=\\beta_1 y_1 + \\gamma_2x_1 +\\zeta_2\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "chapter1.html#parameters-of-the-model",
+    "href": "chapter1.html#parameters-of-the-model",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.4 Parameters of the model",
+    "text": "1.4 Parameters of the model\n\nIn path modelling, we assume that the \\(\\zeta_\\bullet\\) errors are centered (ie zero mean) and we denote their variances by \\(\\sigma^2_\\bullet.\\)\nLet \\(\\theta=(\\gamma_1,\\beta_1,\\gamma_2,\\sigma_1,\\sigma_2)\\) the vector of parameters.\n\nWe can write the correlation matrix of the model \\[\n\\Sigma(\\theta)=\\left( \\begin{array}{ccc}\n1 & \\gamma1 & \\gamma_1\\beta_1+\\gamma_2 \\\\\n& \\gamma_1^2+\\sigma_1^2 & \\beta_1+\\gamma_1\\gamma_2 \\\\\n&  & \\gamma_2^2+\\beta_1^2+\\beta_1\\gamma_1\\gamma_2+\\sigma_2^2\n\\end{array}\n\\right)\n\\]"
+  },
+  {
+    "objectID": "chapter1.html#covariance-analysis",
+    "href": "chapter1.html#covariance-analysis",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.5 Covariance analysis",
+    "text": "1.5 Covariance analysis\nWe denote by \\(S\\) the empirical correlation matrix. We look for the parameter \\(\\theta\\) such as\n\\[\n\\Sigma(\\theta) \\simeq S\n\\] For Ordinary Least Square minimization, the cost function is\n\\[F_{ULS}=\\frac1{2}\\Vert \\Sigma-S\\Vert^2=trace[(\\Sigma-S)^T.(\\Sigma-S)].\\]\nNumerical algoritm can be performed to estimate the solution of this problem."
+  },
+  {
+    "objectID": "chapter1.html#general-problem-of-identification",
+    "href": "chapter1.html#general-problem-of-identification",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.6 General problem of identification",
+    "text": "1.6 General problem of identification\n\n\\(q\\) exogenous variables \\(x_1,...,x_q\\)\n\\(p\\) endogenous variables \\(y_1,...,y_p\\).\n\\(\\theta\\) vector of \\(t\\) parameters to be estimated.\n\nWe must have:\n\\[\nt\\leq\\frac{(p+q)(p+q+1)}{2}\n\\]"
+  },
+  {
+    "objectID": "chapter1.html#jöreskog-formula",
+    "href": "chapter1.html#jöreskog-formula",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.7 Jöreskog formula",
+    "text": "1.7 Jöreskog formula\nThis formula provided an explicit form of the covariance matrix \\(\\Sigma(\\theta)\\) from the parameters \\(\\theta\\) of the Path-model."
+  },
+  {
+    "objectID": "chapter1.html#maximum-likelihood-estimation",
+    "href": "chapter1.html#maximum-likelihood-estimation",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.8 Maximum likelihood estimation",
+    "text": "1.8 Maximum likelihood estimation\n\n\\((x_1,...,x_p,y_1,...,y_q)^T \\sim \\mathcal N (0,\\Sigma)\\), where \\(\\Sigma\\) is the covariance matrix of the variable \\(\\bf{x,y}\\).\n\\(\\Sigma\\) and \\(S\\) are positive-definite.\n\nWe define the log-likelihood function of the path model\n\\[F_{ML}(\\theta)=\\log|\\Sigma|+trace(S\\Sigma^{-1})-\\log|S|-(p+q).\\]"
+  },
+  {
+    "objectID": "chapter1.html#properties",
+    "href": "chapter1.html#properties",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.9 Properties",
+    "text": "1.9 Properties"
+  },
+  {
+    "objectID": "chapter1.html#the-cost-function-f_ml",
+    "href": "chapter1.html#the-cost-function-f_ml",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.10 The cost function \\(F_{ML}\\)",
+    "text": "1.10 The cost function \\(F_{ML}\\)\n\n\\(F_{ML}(S,\\Sigma(\\theta))\\geq 0,\\)\n\\(F_{ML}(S,\\Sigma(\\theta))= 0\\) if and only if \\(S= \\Sigma(\\theta)),\\)\n\\(F_{ML}\\) is continuous in \\(S\\) as well as in \\(Sigma(\\theta).\\)"
+  },
+  {
+    "objectID": "chapter1.html#the-ml-estimator",
+    "href": "chapter1.html#the-ml-estimator",
+    "title": "1  Covariance Analysis for Path model",
+    "section": "1.11 The ML-estimator",
+    "text": "1.11 The ML-estimator\n\nThe maximum of the function \\(F_{ML}\\) has no explicit expression, but it can be numerically estimated (see Jöreskog (1966)).\nAsymptotically, \\(\\widehat \\theta_{ML}\\) is unbiased, consistent, efficient (i.e. among the consistent estimators of \\(\\theta\\) it has the smallest asymptotic variance).\n\n\n\n\n\nJöreskog, K. G. 1966. “SOME CONTRIBUTIONS TO MAXIMUM LIKELIHOOD FACTOR ANALYSIS*.” ETS Research Bulletin Series 1966 (2). https://doi.org/10.1002/j.2333-8504.1966.tb00539.x."
+  },
+  {
+    "objectID": "chapter2.html#second-model",
+    "href": "chapter2.html#second-model",
+    "title": "2  Example in Lavaan",
+    "section": "2.1 Second model",
+    "text": "2.1 Second model\nBuild on lavaan the model corresponding to this path diagram:\n\n\n\n\n\n\n\nSee the correction\nmodel&lt;-\"\nY1~a*X1\nY2~b*Y1\nI:=a*b\n\"\n\nfit1&lt;-sem(model,data=df)\nsummary(fit1)\n\n\nlavaan 0.6.17 ended normally after 1 iteration\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                         4\n\n  Number of observations                           100\n\nModel Test User Model:\n                                                      \n  Test statistic                                16.767\n  Degrees of freedom                                 1\n  P-value (Chi-square)                           0.000\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n  Y1 ~                                                \n    X1         (a)    1.004    0.048   20.880    0.000\n  Y2 ~                                                \n    Y1         (b)    2.829    0.099   28.625    0.000\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n   .Y1                0.985    0.139    7.071    0.000\n   .Y2                5.156    0.729    7.071    0.000\n\nDefined Parameters:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n    I                 2.841    0.168   16.869    0.000"
+  },
+  {
+    "objectID": "chapter3.html#latent-variables",
+    "href": "chapter3.html#latent-variables",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.1 Latent variables",
+    "text": "3.1 Latent variables\n\nLatent variables (or hidden variables) play a central role in a wide range of scientific fields, including psychology, medicine and economics.\nThese variables can not directly observed and can be inferred only indirectly from observable variables.\n\nExample: Intelligence of Children calculated from the fith WISC (Wechsler Intelligence Scale for Children)"
+  },
+  {
+    "objectID": "chapter3.html#structure-of-a-sem",
+    "href": "chapter3.html#structure-of-a-sem",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.2 Structure of a SEM",
+    "text": "3.2 Structure of a SEM\n\nStructural model: linear relationship between latent variables.\nMeasurement model: linear relationship between a latent variable and its indicators."
+  },
+  {
+    "objectID": "chapter3.html#example-of-sem",
+    "href": "chapter3.html#example-of-sem",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.3 Example of SEM:",
+    "text": "3.3 Example of SEM:\n\nThis study was carried out in the Nantes area in 2017.\nThe main issue of this study: Which psychological variables predict academic performances in mathematics and french?\n\nThree latent variables are involved in the model:\n\nrelationship with the teacher,\nself-efficacy feeling,\nacademic performance in mathematics."
+  },
+  {
+    "objectID": "chapter3.html#diagram-of-the-model",
+    "href": "chapter3.html#diagram-of-the-model",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.4 Diagram of the model:",
+    "text": "3.4 Diagram of the model:"
+  },
+  {
+    "objectID": "chapter3.html#structural-model-gray",
+    "href": "chapter3.html#structural-model-gray",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.5 Structural model (gray)",
+    "text": "3.5 Structural model (gray)\nA good relationship with the teacher (R.Ens) increases the self efficacy feeling (SEP) which, its turn, leads to better performances in mathematics.\n\n\n\\[\n\\begin{cases}\n\\eta_1=\\gamma_1 \\xi_1 +\\zeta_1 \\\\\n\\eta_2=\\beta_1 \\eta_1 + \\gamma_2\\xi_1 +\\zeta_2\n\\end{cases}\n\\] where \\(\\eta_\\bullet\\) denotes the endogenous variables and \\(\\xi_\\bullet\\) the exogenous variables.\n\n\n\n\n\n\n\\(\\eta_1:\\) self efficacy feeling, \\(\\eta_2:\\) math performance, \\(\\xi_1:\\) relationship with the teacher."
+  },
+  {
+    "objectID": "chapter3.html#measurement-model",
+    "href": "chapter3.html#measurement-model",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.6 Measurement model",
+    "text": "3.6 Measurement model\nThree latent variables are involved in the model:\n\nrelationship with the teacher: five items were proposed to the children.\nself-efficacy feeling:"
+  },
+  {
+    "objectID": "chapter3.html#example-of-items-for-the-relationship-with-the-teacher",
+    "href": "chapter3.html#example-of-items-for-the-relationship-with-the-teacher",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.7 Example of items for the relationship with the teacher",
+    "text": "3.7 Example of items for the relationship with the teacher\nI’m going to ask you some questions about yourself and about school. I want to know what you’re like when you’re at school. Let me explain these questions first. Each question is about two types of child and I want to know which one is more like you."
+  },
+  {
+    "objectID": "chapter3.html#reflective-model",
+    "href": "chapter3.html#reflective-model",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.8 Reflective model",
+    "text": "3.8 Reflective model\nIn this model, we assume that latent variable predicts item covariances:\n\n\nExample: \\(\\xi_1\\) relationship with teacher measured by 5 items \\(x_1,...,x_5\\) on a Likert scale (i.e. level of agreement or disagreement with a statement) from 1 to 4 .\n\n\n\n\n\n\nObservable variables are written as:\n\\[\nx_i=\\lambda_{1i}\\xi_1+\\delta_i\n\\]"
+  },
+  {
+    "objectID": "chapter3.html#usual-notations-in-covariance-analysis",
+    "href": "chapter3.html#usual-notations-in-covariance-analysis",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.9 Usual notations in covariance analysis",
+    "text": "3.9 Usual notations in covariance analysis\nLet \\(x_1,...,x_p\\) the observable variables corresponding to an exogenous latent variable \\(\\xi\\) and \\(y_1,...,y_p\\) the observable variables of an endogenous latent variable \\(\\eta\\).\n\nMeasurement model: \\[\n\\bf{y}=\\Lambda_y \\eta +\\varepsilon, \\quad\n\\bf{x}=\\Lambda_x \\xi +\\delta.\n\\]\nStructural model:\n\n\\[\\eta=\\bf{B}\\eta+\\Gamma\\xi+\\zeta.\\]"
+  },
+  {
+    "objectID": "chapter3.html#assumptions",
+    "href": "chapter3.html#assumptions",
+    "title": "3  Covariance analysis for SEM",
+    "section": "3.10 Assumptions",
+    "text": "3.10 Assumptions\n\n\\(\\zeta_j\\) and \\(\\xi_i\\) are not correlated,\nErrors \\(\\zeta_j\\) are not correlated.\n\nFor simplifing the model we assume that endogenous and exogenous variables are standardized, that is:\n\\[\n\\mathbb E(\\eta_j)=\\mathbb E(\\xi_k)=0, \\ \\mathbb V(\\eta_j)=\\mathbb V(\\xi_k)=0\n\\]"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Jöreskog, K. G. 1966. “SOME CONTRIBUTIONS TO MAXIMUM LIKELIHOOD\nFACTOR ANALYSIS*.” ETS Research Bulletin Series 1966\n(2). https://doi.org/10.1002/j.2333-8504.1966.tb00539.x."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Stuctural Equation Modeling",
+    "section": "",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "index.html#what-are-sem",
+    "href": "index.html#what-are-sem",
+    "title": "Stuctural Equation Modeling",
+    "section": "What are SEM ?",
+    "text": "What are SEM ?\n\nStructural equation modeling generalizes linear regression models.\nThese models have been introduced into social and psychological studies in the 70’s.\nSEM can be used to produce regression models between latent variables."
+  },
+  {
+    "objectID": "index.html#the-two-approaches",
+    "href": "index.html#the-two-approaches",
+    "title": "Stuctural Equation Modeling",
+    "section": "The two approaches",
+    "text": "The two approaches\n\nCovariance Analysis: Jöreskog (1970)\nPartial Least Square (PLS): Wold (1980)\n\n\\(\\leadsto\\) In this workshop we will focus on the covariance analysis with the most theoritical and mathematical background.\n\n\n\n\n\nJöreskog\n\n\n\n\n\n\nWold"
+  },
+  {
+    "objectID": "index.html#the-reference-book",
+    "href": "index.html#the-reference-book",
+    "title": "Stuctural Equation Modeling",
+    "section": "The reference book",
+    "text": "The reference book\n\n\n\n\n\nBollen (1989)"
+  },
+  {
+    "objectID": "index.html#contents-of-the-workshop",
+    "href": "index.html#contents-of-the-workshop",
+    "title": "Stuctural Equation Modeling",
+    "section": "Contents of the workshop",
+    "text": "Contents of the workshop\n\nSEM without a measurement model: Path modeling\nSEM with a measurement model: Factor Analysis and structural relation."
+  },
+  {
+    "objectID": "index.html#sem-terminology-and-notations",
+    "href": "index.html#sem-terminology-and-notations",
+    "title": "Stuctural Equation Modeling",
+    "section": "SEM Terminology and Notations",
+    "text": "SEM Terminology and Notations\nIn SEM, two categories of variables are involved:\n\nExogenous variable (denoted by \\(\\xi\\)) who are deterministic. These values are independent from the values of the other variables of the model. Normal regression models assume that the predictors are exogenous.\nEndogenous variable (denoted by \\(\\eta\\)) who are stochastic and who are correlated with the error of the model. These values are depending of the values of other factors involved in the model.\n\nIn the first example \\(X_1\\) is exogenous and \\(X_2,X_3\\) are endogenous."
+  },
+  {
+    "objectID": "index.html#software",
+    "href": "index.html#software",
+    "title": "Stuctural Equation Modeling",
+    "section": "Software",
+    "text": "Software\nLavaan is a the most popular package on R for latent variable modelling.\n\nThe official reference of lavaan: (rosseel2012?)\nIts website : lavaan.org\nFor installing lavaan :\n\n\ninstall.packages(\"lavaan\", dependencies = TRUE)\n\n\n\n\n\nBollen, Kenneth A. 1989. Structural Equations with Latent Variables. 1st ed. Wiley. https://doi.org/10.1002/9781118619179.\n\n\nJöreskog, K. G. 1970. “A General Method for Analysis of Covariance Structures.” Biometrika 57 (2): 239–51. https://doi.org/10.1093/biomet/57.2.239.\n\n\nWold, Herman. 1980. “Model Construction and Evaluation When Theoretical Knowledge Is Scarce.” In, 47–74. National Bureau of Economic Research, Inc. https://EconPapers.repec.org/RePEc:nbr:nberch:11693."
+  }
+]
