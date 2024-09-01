@@ -146,6 +146,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Application on Lavaan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -174,6 +180,7 @@ div.csl-indent {
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties"><span class="header-section-number">1.9</span> Properties</a></li>
   <li><a href="#the-cost-function-f_ml" id="toc-the-cost-function-f_ml" class="nav-link" data-scroll-target="#the-cost-function-f_ml"><span class="header-section-number">1.10</span> The cost function <span class="math inline">\(F_{ML}\)</span></a></li>
   <li><a href="#the-ml-estimator" id="toc-the-ml-estimator" class="nav-link" data-scroll-target="#the-ml-estimator"><span class="header-section-number">1.11</span> The ML-estimator</a></li>
+  <li><a href="#chi-square-test-of-model-fit" id="toc-chi-square-test-of-model-fit" class="nav-link" data-scroll-target="#chi-square-test-of-model-fit"><span class="header-section-number">1.12</span> Chi-Square Test of Model Fit</a></li>
   </ul>
 </nav>
     </div>
@@ -311,6 +318,17 @@ t\leq\frac{(p+q)(p+q+1)}{2}
 <ul>
 <li><p>The maximum of the function <span class="math inline">\(F_{ML}\)</span> has no explicit expression, but it can be numerically estimated (see <span class="citation" data-cites="jöreskog1966">Jöreskog (<a href="references.html#ref-jöreskog1966" role="doc-biblioref">1966</a>)</span>).</p></li>
 <li><p>Asymptotically, <span class="math inline">\(\widehat \theta_{ML}\)</span> is unbiased, consistent, efficient (i.e.&nbsp;among the consistent estimators of <span class="math inline">\(\theta\)</span> it has the smallest asymptotic variance).</p></li>
+</ul>
+<p><span class="math inline">\(\leadsto\)</span> Tests can be built using the previous property.</p>
+</section>
+<section id="chi-square-test-of-model-fit" class="level2" data-number="1.12">
+<h2 data-number="1.12" class="anchored" data-anchor-id="chi-square-test-of-model-fit"><span class="header-section-number">1.12</span> Chi-Square Test of Model Fit</h2>
+<p>It tests the null hypothesis <span class="math display">\[H_0:\Sigma(\theta)=\Sigma.\]</span> (i.e.&nbsp;implied covariance matrix equal to population covariance matrix) Under <span class="math inline">\(H_0\)</span>, its statistical is distributed from a chi-square with <span class="math inline">\(df=\frac{(p+q)(p+q+1)}{2}-t.\)</span></p>
+<p>Drawback of the test: it tends to be highly powered with large samples i.e.&nbsp;null hypothesis is always rejected ….</p>
+<p><span class="math inline">\(\leadsto\)</span> goodness of fit indices (<strong><em>GOF</em></strong>) have been introduced since 50 years.</p>
+<ul>
+<li><p>Relative GOF compare the implied model to a baseline model which assumes all the variables have variance but no covariance (for instance CFI,TLI).</p></li>
+<li><p>Absolute GOF (for instance RMSEA).</p></li>
 </ul>
 
 

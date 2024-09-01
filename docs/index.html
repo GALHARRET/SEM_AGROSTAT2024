@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Galharret Jean-Michel">
-<meta name="dcterms.date" content="2026-04-08">
+<meta name="dcterms.date" content="2024-09-03">
 
 <title>Stuctural Equation Modeling</title>
 <style>
@@ -116,6 +116,9 @@ div.csl-indent {
   }
 }</script>
 
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -181,6 +184,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Application on Lavaan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -197,9 +206,9 @@ div.csl-indent {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#what-are-sem" id="toc-what-are-sem" class="nav-link" data-scroll-target="#what-are-sem">What are SEM ?</a></li>
+  <li><a href="#what-is-a-structural-equation-model" id="toc-what-is-a-structural-equation-model" class="nav-link" data-scroll-target="#what-is-a-structural-equation-model">What is a structural equation model?</a></li>
   <li><a href="#the-two-approaches" id="toc-the-two-approaches" class="nav-link" data-scroll-target="#the-two-approaches">The two approaches</a></li>
-  <li><a href="#the-reference-book" id="toc-the-reference-book" class="nav-link" data-scroll-target="#the-reference-book">The reference book</a></li>
+  <li><a href="#the-reference-books" id="toc-the-reference-books" class="nav-link" data-scroll-target="#the-reference-books">The reference books</a></li>
   <li><a href="#contents-of-the-workshop" id="toc-contents-of-the-workshop" class="nav-link" data-scroll-target="#contents-of-the-workshop">Contents of the workshop</a></li>
   <li><a href="#sem-terminology-and-notations" id="toc-sem-terminology-and-notations" class="nav-link" data-scroll-target="#sem-terminology-and-notations">SEM Terminology and Notations</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
@@ -230,7 +239,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 8, 2026</p>
+      <p class="date">September 3, 2024</p>
     </div>
   </div>
   
@@ -242,8 +251,9 @@ div.csl-indent {
 
 <section id="introduction" class="level1 unnumbered">
 <h1 class="unnumbered">Introduction</h1>
-<section id="what-are-sem" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-sem">What are SEM ?</h2>
+<p>This AGROSTAT2024 pre-conference workshop was held on 3 September 2024 in Bragança. All its material is available at <a href="https://galharret.github.io/SEM_AGROSTAT2024/" class="uri">https://galharret.github.io/SEM_AGROSTAT2024/</a></p>
+<section id="what-is-a-structural-equation-model" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-structural-equation-model">What is a structural equation model?</h2>
 <ul>
 <li><p>Structural equation modeling generalizes linear regression models.</p></li>
 <li><p>These models have been introduced into social and psychological studies in the 70’s.</p></li>
@@ -275,14 +285,32 @@ div.csl-indent {
 </div>
 </div>
 </section>
-<section id="the-reference-book" class="level2">
-<h2 class="anchored" data-anchor-id="the-reference-book">The reference book</h2>
+<section id="the-reference-books" class="level2">
+<h2 class="anchored" data-anchor-id="the-reference-books">The reference books</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/bollen.png" class="img-fluid figure-img"></p>
+<p><img src="images/bollen.png" style="height:5cm" class="figure-img"></p>
+<figcaption class="figure-caption"><span class="citation" data-cites="bollen1989">Bollen (<a href="references.html#ref-bollen1989" role="doc-biblioref">1989</a>)</span></figcaption>
 </figure>
 </div>
-<p><span class="citation" data-cites="bollen1989">Bollen (<a href="references.html#ref-bollen1989" role="doc-biblioref">1989</a>)</span></p>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/kline.jpg" style="height:5cm" class="figure-img"></p>
+<figcaption class="figure-caption"><span class="citation" data-cites="kline2023">Kline (<a href="references.html#ref-kline2023" role="doc-biblioref">2023</a>)</span></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/chen.jpg" style="height:5cm" class="figure-img"></p>
+<figcaption class="figure-caption"><span class="citation" data-cites="chen2024">Chen and Yung (<a href="references.html#ref-chen2024" role="doc-biblioref">2024</a>)</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="contents-of-the-workshop" class="level2">
 <h2 class="anchored" data-anchor-id="contents-of-the-workshop">Contents of the workshop</h2>
@@ -304,7 +332,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="software">Software</h2>
 <p>Lavaan is a the most popular package on R for latent variable modelling.</p>
 <ul>
-<li><p>The official reference of lavaan: <span class="citation" data-cites="rosseel2012">(<a href="references.html#ref-rosseel2012" role="doc-biblioref"><strong>rosseel2012?</strong></a>)</span></p></li>
+<li><p>The official reference of lavaan: <span class="citation" data-cites="rosseel2012">Rosseel (<a href="references.html#ref-rosseel2012" role="doc-biblioref">2012</a>)</span></p></li>
 <li><p>Its website : <a href="https://lavaan.ugent.be/">lavaan.org</a></p></li>
 <li><p>For installing lavaan :</p></li>
 </ul>
@@ -317,8 +345,17 @@ div.csl-indent {
 <div id="ref-bollen1989" class="csl-entry" role="listitem">
 Bollen, Kenneth A. 1989. <em>Structural Equations with Latent Variables</em>. 1st ed. Wiley. <a href="https://doi.org/10.1002/9781118619179">https://doi.org/10.1002/9781118619179</a>.
 </div>
+<div id="ref-chen2024" class="csl-entry" role="listitem">
+Chen, Ding-Geng, and Yiu-Fai Yung. 2024. <em>Structural Equation Modeling Using r/SAS: A Step-by-Step Approach with Real Data Analysis</em>. First edition. Boca Raton: CRC Press.
+</div>
 <div id="ref-jöreskog1970" class="csl-entry" role="listitem">
 Jöreskog, K. G. 1970. <span>“A General Method for Analysis of Covariance Structures.”</span> <em>Biometrika</em> 57 (2): 239–51. <a href="https://doi.org/10.1093/biomet/57.2.239">https://doi.org/10.1093/biomet/57.2.239</a>.
+</div>
+<div id="ref-kline2023" class="csl-entry" role="listitem">
+Kline, Rex B. 2023. <em>Principles and Practice of Structural Equation Modeling</em>. Fifth edition. Methodology in the Social Sciences. New York: The Guilford Press.
+</div>
+<div id="ref-rosseel2012" class="csl-entry" role="listitem">
+Rosseel, Yves. 2012. <span>“<span><strong>Lavaan</strong></span> : An <span><em>R</em></span> Package for Structural Equation Modeling.”</span> <em>Journal of Statistical Software</em> 48 (2). <a href="https://doi.org/10.18637/jss.v048.i02">https://doi.org/10.18637/jss.v048.i02</a>.
 </div>
 <div id="ref-wold1980" class="csl-entry" role="listitem">
 Wold, Herman. 1980. <span>“Model Construction and Evaluation When Theoretical Knowledge Is Scarce.”</span> In, 47–74. National Bureau of Economic Research, Inc. <a href="https://EconPapers.repec.org/RePEc:nbr:nberch:11693">https://EconPapers.repec.org/RePEc:nbr:nberch:11693</a>.

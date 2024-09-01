@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./chapter4.html" rel="next">
 <link href="./chapter2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -127,6 +127,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Application on Lavaan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -151,6 +157,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reflective-model" id="toc-reflective-model" class="nav-link" data-scroll-target="#reflective-model"><span class="header-section-number">3.8</span> Reflective model</a></li>
   <li><a href="#usual-notations-in-covariance-analysis" id="toc-usual-notations-in-covariance-analysis" class="nav-link" data-scroll-target="#usual-notations-in-covariance-analysis"><span class="header-section-number">3.9</span> Usual notations in covariance analysis</a></li>
   <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions"><span class="header-section-number">3.10</span> Assumptions</a></li>
+  <li><a href="#gof-indices-in-sem" id="toc-gof-indices-in-sem" class="nav-link" data-scroll-target="#gof-indices-in-sem"><span class="header-section-number">3.11</span> GOF indices in SEM</a></li>
   </ul>
 </nav>
     </div>
@@ -281,14 +288,12 @@ x_i=\lambda_{1i}\xi_1+\delta_i
 </section>
 <section id="assumptions" class="level2" data-number="3.10">
 <h2 data-number="3.10" class="anchored" data-anchor-id="assumptions"><span class="header-section-number">3.10</span> Assumptions</h2>
-<ul>
-<li><p><span class="math inline">\(\zeta_j\)</span> and <span class="math inline">\(\xi_i\)</span> are not correlated,</p></li>
-<li><p>Errors <span class="math inline">\(\zeta_j\)</span> are not correlated.</p></li>
-</ul>
-<p>For simplifing the model we assume that endogenous and exogenous variables are standardized, that is:</p>
-<p><span class="math display">\[
-\mathbb E(\eta_j)=\mathbb E(\xi_k)=0, \ \mathbb V(\eta_j)=\mathbb V(\xi_k)=0
-\]</span></p>
+<p>The assumptions on the latent variables are the same as those on the observed variables for path modelling.</p>
+</section>
+<section id="gof-indices-in-sem" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="gof-indices-in-sem"><span class="header-section-number">3.11</span> GOF indices in SEM</h2>
+<p>The most popular are CFI, TLI and RMSEA.</p>
+<p>The relative GOF are often used to evaluate the measurement model while the absolute GOF evaluate the structural model.</p>
 
 
 </section>
@@ -534,8 +539,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chapter4.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Application on Lavaan</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
