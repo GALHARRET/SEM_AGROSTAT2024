@@ -190,6 +190,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapter5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Longitudinal Models with lavaan</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -208,7 +214,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#what-is-a-structural-equation-model" id="toc-what-is-a-structural-equation-model" class="nav-link" data-scroll-target="#what-is-a-structural-equation-model">What is a structural equation model?</a></li>
   <li><a href="#the-two-approaches" id="toc-the-two-approaches" class="nav-link" data-scroll-target="#the-two-approaches">The two approaches</a></li>
-  <li><a href="#the-reference-books" id="toc-the-reference-books" class="nav-link" data-scroll-target="#the-reference-books">The reference books</a></li>
+  <li><a href="#some-reference-books" id="toc-some-reference-books" class="nav-link" data-scroll-target="#some-reference-books">Some reference books</a></li>
   <li><a href="#contents-of-the-workshop" id="toc-contents-of-the-workshop" class="nav-link" data-scroll-target="#contents-of-the-workshop">Contents of the workshop</a></li>
   <li><a href="#sem-terminology-and-notations" id="toc-sem-terminology-and-notations" class="nav-link" data-scroll-target="#sem-terminology-and-notations">SEM Terminology and Notations</a></li>
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a></li>
@@ -251,7 +257,9 @@ div.csl-indent {
 
 <section id="introduction" class="level1 unnumbered">
 <h1 class="unnumbered">Introduction</h1>
-<p>This AGROSTAT2024 pre-conference workshop was held on 3 September 2024 in Bragança. All its material is available at <a href="https://galharret.github.io/SEM_AGROSTAT2024/" class="uri">https://galharret.github.io/SEM_AGROSTAT2024/</a></p>
+<ul>
+<li>This AGROSTAT2024 pre-conference workshop will held on 3 September 2024 in Bragança. All its material is available at <a href="https://galharret.github.io/SEM_AGROSTAT2024/" class="uri">https://galharret.github.io/SEM_AGROSTAT2024/</a></li>
+</ul>
 <section id="what-is-a-structural-equation-model" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-a-structural-equation-model">What is a structural equation model?</h2>
 <ul>
@@ -285,28 +293,35 @@ div.csl-indent {
 </div>
 </div>
 </section>
-<section id="the-reference-books" class="level2">
-<h2 class="anchored" data-anchor-id="the-reference-books">The reference books</h2>
+<section id="some-reference-books" class="level2">
+<h2 class="anchored" data-anchor-id="some-reference-books">Some reference books</h2>
 <div class="columns">
-<div class="column" style="width:30%;">
+<div class="column" style="width:24%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/bollen.png" style="height:5cm" class="figure-img"></p>
 <figcaption class="figure-caption"><span class="citation" data-cites="bollen1989">Bollen (<a href="references.html#ref-bollen1989" role="doc-biblioref">1989</a>)</span></figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:24%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/kline.jpg" style="height:5cm" class="figure-img"></p>
 <figcaption class="figure-caption"><span class="citation" data-cites="kline2023">Kline (<a href="references.html#ref-kline2023" role="doc-biblioref">2023</a>)</span></figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:30%;">
+</div><div class="column" style="width:24%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/chen.jpg" style="height:5cm" class="figure-img"></p>
 <figcaption class="figure-caption"><span class="citation" data-cites="chen2024">Chen and Yung (<a href="references.html#ref-chen2024" role="doc-biblioref">2024</a>)</span></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:24%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/book4.png" style="height:5cm" class="figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.cambridge.org/core/books/structural-equation-modeling/CB5C21C6880F31BD8B16A8B21302D35E">Pugesek et al (2007)</a></figcaption>
 </figure>
 </div>
 </div>
@@ -334,10 +349,10 @@ div.csl-indent {
 <ul>
 <li><p>The official reference of lavaan: <span class="citation" data-cites="rosseel2012">Rosseel (<a href="references.html#ref-rosseel2012" role="doc-biblioref">2012</a>)</span></p></li>
 <li><p>Its website : <a href="https://lavaan.ugent.be/">lavaan.org</a></p></li>
-<li><p>For installing lavaan :</p></li>
+<li><p>For installing lavaan and SemTools:</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lavaan"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"lavaan"</span>,<span class="st">"semTools"</span>), <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
